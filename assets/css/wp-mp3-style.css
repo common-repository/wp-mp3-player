@@ -1,0 +1,44 @@
+/* FIRST, OVERWRITE DEFAULT, FIXED WIDTH 'AUDIOJS' SKIN *
+ * (IT IS RECOMMENDED THAT YOU DON'T EDIT THIS SECTION) *
+-------------------------------------------------------*/
+.audiojs { position: relative; width: 100%; font-family: arial,sans-serif; font-size: 0.9em; background-color: transparent; background-image: none; -webkit-box-shadow: none; -moz-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+.audiojs .play-pause { position: absolute; top: 0; left: 0; float: none; width: 24px; padding: 4px 0px; border: none; }
+.audiojs .scrubber { float: none; width: auto; margin-left: 25px !important; margin-right: 80px !important; } 
+.audiojs .progress { background-image: none; }
+.audiojs .loaded { background-image: none; }
+.audiojs .time { position: absolute; top: 0; right: 0; width: 79px; float: none; padding-left: 6px; padding-right: 6px; text-align: center; color: inherit; border-left: 0; text-shadow: none; }
+.audiojs .error-message { position: absolute; left: -9999px; display: none; }
+
+
+/* SECONDLY, ADD SOME CSS STYLING OF OUR OWN      *
+ * (YOU CAN EDIT THIS SECTION TO MATCH YOUR BLOG) *
+--------------------------------------------------*/
+@font-face {
+	font-family:'Glyphicons Halflings';
+	src: url(../fonts/glyphicons-halflings-regular.eot);
+	src: url(../fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+		 url(../fonts/glyphicons-halflings-regular.woff2) format('woff2'),
+		 url(../fonts/glyphicons-halflings-regular.woff) format('woff'),
+		 url(../fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+		 url(../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+.audiojs { background-color: #f3f3f3; border: 1px solid #ebebeb; }
+.audiojs .play, .audiojs .loading, .audiojs .error, .audiojs .pause { background: none; position: relative; padding-top: 7px; padding-left: 7px; font-family: 'Glyphicons Halflings'; font-style: normal; font-weight: 400; line-height: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+.audiojs .play:before { content:"\e072"; }
+.audiojs .loading:before { content:"\e178"; }
+.audiojs .error:before { content:"\e209"; }
+.audiojs .pause:before { content:"\e073"; }
+.audiojs .scrubber { background: #ccc; border-top: 1px solid #999; height: 12px; margin-top: 11px; margin-bottom: 11px; }
+.audiojs .progress { height: 12px; background-color: #f0ad4e; }
+.audiojs .loaded { height: 12px; background-color: #d8deea; }
+.audiojs .time { height: 34px; line-height: 34px; color: #999; } 
+.audiojs .time em { color: #444; }
+
+
+/* FINALLY, STYLE THE TRACK PLAYLIST BELOW
+-------------------------------------------*/
+ol.mp3_playlist { padding: 3px 0 0; margin: 0; list-style: decimal-leading-zero inside; color: #999; font-size: 0.9em; }
+ol.mp3_playlist li { position: relative; margin: 0px; padding: 2px; cursor: pointer; }
+ol.mp3_playlist li.playing { background-color: #fffae8; color: #444;  }
+
+
